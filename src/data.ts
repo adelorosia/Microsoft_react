@@ -177,8 +177,16 @@ export const getMenu = () => {
 };
 
 export const getCard = (position: string) => {
-  if (position === "top") return card_top;
-  else if(position==="bottom") return card_bottom
+  switch(position){
+    case "top":
+      return card_top
+      break;
+      case "bottom":
+        return card_bottom
+        break;
+        default:
+          console.log('Invalid Option');   
+  }
 };
 
 export const getLinkItems=()=>{

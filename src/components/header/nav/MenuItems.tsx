@@ -8,8 +8,8 @@ const MenuItems:React.FC<IShowMenu> = ({ showMenu, isActiveMenu }) => {
   const menuItem = getMenu();
   return (
     <div
-      className={`sm:hidden flex flex-col gap-10 bg-PRIMARY/70 fixed inset-0 items-center justify-center backdrop-blur-sm ${
-        showMenu ? "" : "hidden"
+      className={`sm:hidden  flex-col gap-10 bg-PRIMARY/80 fixed inset-0 items-center justify-center backdrop-blur-lg ${
+        showMenu ? "flex" : "hidden"
       }`}
     >
       <IoClose className=' cursor-pointer text-WHITE text-3xl' onClick={() => isActiveMenu()} />
