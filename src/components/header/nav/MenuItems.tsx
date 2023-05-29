@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { getMenu } from "../../../data";
 import { IoClose } from "react-icons/io5";
+import React from "react";
+import { IShowMenu } from "./IShowMenu";
 
-const MenuItems = ({ showMenu, isActiveMenu }) => {
+const MenuItems:React.FC<IShowMenu> = ({ showMenu, isActiveMenu }) => {
   const menuItem = getMenu();
   return (
     <div
